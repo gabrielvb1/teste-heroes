@@ -1,0 +1,33 @@
+{
+  "name": "testculttivo",
+  "version": "1.0.0",
+  "description": "Instruções do Teste Técnico para Backend Objetivo do Teste O objetivo é avaliar sua habilidade em trabalhar com Node.js, integração com APIs externas, criação de endpoints RESTful e persistência de dados. Você deverá conectar-se à API da Marvel e implementar as seguintes funcionalidades, com foco em construir uma API backend que sirva dados para um frontend que consuma informações sobre os personagens da Marvel. Requisitos do Teste 1. Conexão com a API da Marvel Implemente a integração com a API da Marvel para capturar informações dos personagens e expor endpoints que servirão esses dados a um frontend. Endpoints da API da Marvel a serem utilizados: Listagem de personagens: GET http://gateway.marvel.com/v1/public/characters Detalhes de um personagem específico: GET http://gateway.marvel.com/v1/public/characters/{idPersonagem} Todas as requisições para a API da Marvel devem conter o parâmetro apikey no query string, usando a chave pública da Marvel fornecida.",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/knex": "^0.15.2",
+    "axios": "^1.8.2",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "knex": "^3.1.0",
+    "objection": "^3.1.5",
+    "pg": "^8.13.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.9",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
